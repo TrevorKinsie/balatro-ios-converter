@@ -8,12 +8,7 @@ jit_off_for_files = ["engine/http_manager.lua", "engine/profile.lua", "engine/sa
 
 
 def copy_balatro_executable():
-    if sys.platform == "win32":
-        shutil.copy("C:\\Program Files (x86)\\Steam\\steamapps\\common\\Balatro\\Balatro.exe", "balatro")
-    elif sys.platform == "darwin":
-        shutil.copy("/Users/" + os.getlogin() + "/Library/Application Support/Steam/steamapps/common/Balatro/Balatro.app/Contents/Resources/Balatro.love", "balatro")
-    elif sys.platform == "linux":
-        shutil.copy("/home/" + os.getlogin() + "/.steam/steam/steamapps/common/Balatro/Balatro.love", "balatro")
+    shutil.copy("/root/Balatro.v1.0.1f/Balatro.v1.0.1f/Balatro.exe", "balatro")
 
 
 def extract_balatro_files():
